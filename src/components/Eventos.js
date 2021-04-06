@@ -72,3 +72,28 @@ restar = (e) => {
         );
     }
 }
+
+export class MasSobreEventos extends Component {
+    handleClick = (e, mensaje) => {
+        console.log(e);
+        console.log(e.nativeEvent);
+        console.log(e.target);
+        console.log(e.nativeEvent.target);
+        console.log(mensaje);
+    };
+
+    render(){
+        return (
+            <div>
+                <h2>Más sobre Eventos</h2>
+                <button 
+                 onClick={(e)=>
+                this.handleClick(e, "Hola pasando parámetro desde un evento")
+                }
+                 >
+                 Saludar
+                 </button>
+            </div>
+        );
+    }
+}
