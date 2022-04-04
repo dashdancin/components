@@ -11,13 +11,13 @@ function Pokemon({avatar, name}) {
 
 export default function AjaxHooks() {
     const [pokemons, setPokemons] = useState([]);
+
 useEffect(()=> {
-    
     const getPokemons = async (url) => {
         let res = await fetch(url),
         json = await res.json();
 
-        json.result.forEach(async (el) => {
+        json.results.forEach(async (el) => {
             let res = await fetch(el.url),
             json = await res.json();
 
