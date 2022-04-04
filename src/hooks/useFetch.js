@@ -11,12 +11,12 @@ export const useFetch = (url) => {
             let res = await fetch(url);
 
             if (!res.ok) {
-                throw {
-                    err: true, 
-                    status: res.status,
-                    statusText: !res.status ? "Ocurrió un error" : res.statusText,
-                };
-            }
+            throw {
+            err: true, 
+            status: res.status,
+            statusText: !res.statusText ? "Ocurrió un error" : res.statusText,
+            };
+        }
 
             let data = await res.json();
 
