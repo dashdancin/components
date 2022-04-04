@@ -21,7 +21,7 @@ useEffect(()=> {
             let res = await fetch(el.url),
             json = await res.json();
 
-        let Pokemon = {
+        let pokemon = {
             id: json.id,
             name: json.name,
             avatar: json.sprites.front_default,
