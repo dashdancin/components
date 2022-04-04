@@ -5,7 +5,8 @@ export default function Referencias(){
     let refMenu = useRef(),
         refMenuBtn = useRef();
     
-        console.log(refMenu, refMenuBtn);
+        // console.log(refMenu, refMenuBtn);
+        
     const handleToggleMenu = (e) => {
         // const $menu = document.getElementById("menu");
 
@@ -16,5 +17,13 @@ export default function Referencias(){
         //     e.target.textContent = "Menú";
         //     $menu.style.display = "none";
         // }
+        
+        if (refMenuBtn.current.textContent === "Menú") {
+            refMenuBtn.current.textContent = "Cerrar";
+            refMenu.current.style.display = "block";
+        } else {
+            refMenuBtn.current.textContent = "Menú";
+            
+        }
     } 
 }
