@@ -179,15 +179,15 @@ export default function Formularios() {
             <option value='rb'>Ruby</option>
         </select>
         <br />
-        <label htmlFor="terminos">Acepto términos y condiciones</label>
+        <label htmlFor='terminos'>Acepto términos y condiciones</label>
         <input
-          type="checkbox"
-          id="terminos"
-          name="terminos"
+          type='checkbox'
+          id='terminos'
+          name='terminos'
           onChange={handleChecked}
         />
         <br />
-        <input type="submit" />
+        <input type='submit' />
         </form>
         </>
     )
