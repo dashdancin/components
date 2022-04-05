@@ -106,7 +106,7 @@ export default function Formularios() {
         const handleChecked = (e) => {
             setForm({
                 ...form,
-                [e.target.name]: e.target.checkend,
+                [e.target.name]: e.target.checked,
             });
         };
 
