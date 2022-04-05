@@ -169,7 +169,26 @@ export default function Formularios() {
           onChange={handleChange}
         />
         <label htmlFor="svelte">Svelte</label>
-            </form>
+        <p>Elige tu lenguaje de programación favorito</p>
+        <select name='lenguaje' onChange={handleChange} defaultValue=''>
+            <option value=''>---</option>
+            <option value='js'>JavScript</option>
+            <option value='php'>PHP</option>
+            <option value='py'>Phyton</option>
+            <option value='go'>GO</option>
+            <option value='rb'>Ruby</option>
+        </select>
+        <br />
+        <label htmlFor="terminos">Acepto términos y condiciones</label>
+        <input
+          type="checkbox"
+          id="terminos"
+          name="terminos"
+          onChange={handleChecked}
+        />
+        <br />
+        <input type="submit" />
+        </form>
         </>
     )
 }
