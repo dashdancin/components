@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Formularios() {
     const [nombre, setNombre] = useState ('');
     const [sabor, setSabor] = useState ('');
-    // const [lenguaje, SetLenguaje] = useState ("");
+    const [lenguaje, SetLenguaje] = useState ('');
     // const [terminos, setTerminos] = useState (false);
 
     const handleSubmit = (e) => {
@@ -65,6 +65,29 @@ export default function Formularios() {
                     onChange={(e) => setSabor(e.target.value)}
                 />
                 <label htmlFor='svelte'>Svelte</label>
+                <p>Elige tu lenguaje de programación favorito</p>
+                <select
+                name='lenguaje'
+                onChange={(e) => setLenguaje(e.target.value)}
+                defaultValue=''
+                >
+                <option value=''>- - -</option>
+                <option value='js'>JavScript</option>
+                <option value='php'>PHP</option>
+                <option value='py'>Phyton</option>
+                <option value='go'>GO</option>
+                <option value='rb'>Ruby</option>
+                </select>
+                <br/>
+                <label htmlFor='terminos'>Acepto términos y condiciones</label>
+                <input
+                type='checkbox'
+                id='terminos'
+                name='terminos'
+                onChance={(e) => setTerminos(e.target.checked)}
+                />
+                <br/>
+                <input type='submit'/>
             </form>
         </>
     );
