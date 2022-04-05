@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { createRef, useRef } from 'react';
 
 export default function Referencias(){
     // let refMenu = createRef(),
