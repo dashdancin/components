@@ -23,7 +23,14 @@ export default function Referencias(){
             refMenu.current.style.display = "block";
         } else {
             refMenuBtn.current.textContent = "Menú";
-            
+            refMenu.current.style.display = "none";
         }
-    } 
+    }; 
+
+    return (
+        <>
+        <h2>Referencias</h2>
+        <button id="menu-btn" ref={refMenuBtn} onClick={handleToggleMenu}></button>
+        </>
+    )
 }
