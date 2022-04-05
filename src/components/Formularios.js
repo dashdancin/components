@@ -116,27 +116,59 @@ export default function Formularios() {
     };
 
     return (
-        <>
-            <h2>Formularios</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='nombre'>Nombre:</label>
-                <input
-                    type='text'
-                    id='nombre'
-                    name='nombre'
-                    value={form.name}
-                    onChange={handleChange}
-                    />
-                <p>Elige tu Sabor JS Favorito</p>
-                <input
-                    type="radio"
-                    id="vanilla"
-                    name="sabor"
-                    value="vanilla"
-                    onChange={handleChange}
-                    defaultChecked
-                />
-                <label htmlFor=''></label>
+    <>
+    <h2>Formularios</h2>
+    <form onSubmit={handleSubmit}>
+        <label htmlFor='nombre'>Nombre:</label>
+        <input
+            type='text'
+            id='nombre'
+            name='nombre'
+            value={form.name}
+            onChange={handleChange}
+            />
+        <p>Elige tu Sabor JS Favorito</p>
+        <input
+            type="radio"
+            id="vanilla"
+            name="sabor"
+            value="vanilla"
+            onChange={handleChange}
+            defaultChecked
+            />
+  <label htmlFor="vanilla">Vanilla</label>
+        <input
+          type="radio"
+          id="react"
+          name="sabor"
+          value="react"
+          onChange={handleChange}
+        />
+        <label htmlFor="react">React</label>
+        <input
+          type="radio"
+          id="angular"
+          name="sabor"
+          value="angular"
+          onChange={handleChange}
+        />
+        <label htmlFor="angular">Angular</label>
+        <input
+          type="radio"
+          id="vue"
+          name="sabor"
+          value="vue"
+          onChange={handleChange}
+        />
+        <label htmlFor="vue">Vue</label>
+        <input
+          type="radio"
+          id="svelte"
+          name="sabor"
+          value="svelte"
+          onChange={handleChange}
+        />
+        <label htmlFor="svelte">Svelte</label>
             </form>
         </>
     )
