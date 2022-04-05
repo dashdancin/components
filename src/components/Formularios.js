@@ -27,17 +27,17 @@ export default function Formularios() {
                 <input
                     type='radio'
                     id='vanilla'
-                    name="sabor"
-                    value="vanilla"
+                    name='sabor'
+                    value='vanilla'
                     onChange={(e) => setSabor(e.target.value)}
                     defaultChecked
                 />
-                <label htmlFor="vanilla">Vanilla</label>
+                <label htmlFor='vanilla'>Vanilla</label>
                 <input
-                    type="radio"
-                    id="react"
-                    name="sabor"
-                    value="react"
+                    type='radio'
+                    id='react'
+                    name='sabor'
+                    value='react'
                     onChange={(e) => setSabor(e.target.value)}
                 />
                 <label htmlFor='react'>React</label>
