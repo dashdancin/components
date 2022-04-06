@@ -1,5 +1,5 @@
 {
-    'framework':[
+    "frameworks":[
         {
             "id":1,
             "name": "React",
@@ -24,6 +24,6 @@
             "id":5,
             "name": "Svelte",
             "web": "https://svelt.dev"        
-        },
+        }
     ]
 }
