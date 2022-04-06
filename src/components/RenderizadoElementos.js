@@ -11,6 +11,12 @@ export default class RenderizadodeElementos extends Component {
         return(
             <div>
                 <h2>Renderizado de Elementos</h2>
+                <h3>Estaciones del Año</h3>
+                <ol>
+                    {this.state.season.map((el,index) => (
+                        <il key={index}>{el}</il>
+                    ))}
+                </ol>
             </div>
         );
     }
