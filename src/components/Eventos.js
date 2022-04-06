@@ -78,7 +78,7 @@ restar = (e) => {
 //     }
 
 const Boton = ({myOnClick}) => ( 
-    <button onClick={myOnClick}>Boton hecho componente</button>
+    <button onClick={myOnClick}>Boton componente</button>
 )
     
 export class MasSobreEventos extends Component {
