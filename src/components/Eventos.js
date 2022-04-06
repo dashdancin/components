@@ -73,8 +73,8 @@ restar = (e) => {
     }
 }
 
-function Boton() {
-    return(<button>Boton hecho componente</button>)
+function Boton(props) {
+    return(<button onClick={props.myOnClick}>Boton hecho componente</button>)
     }
     
 export class MasSobreEventos extends Component {
@@ -97,7 +97,15 @@ export class MasSobreEventos extends Component {
                  >
                  Saludar
                  </button>
-                 <Boton/>
+                 {/* {EventoPersonalizado}
+                 {<Boton
+                 onClick=[(e)=>
+                this.handleClick, "Hola pasando parámmetro desde un evento"]} */}
+                 <Boton
+                 myOnClick={(e) =>
+                  this.handleClick(e, "Hola pasando parámetro desde un evento")
+                }
+                 />
             </div>
         );
     }
