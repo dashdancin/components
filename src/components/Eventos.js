@@ -73,6 +73,10 @@ restar = (e) => {
     }
 }
 
+function Boton() {
+    return(<button>Boton hecho componente</button>)
+    }
+    
 export class MasSobreEventos extends Component {
     handleClick = (e, mensaje) => {
         console.log(e);
@@ -93,6 +97,7 @@ export class MasSobreEventos extends Component {
                  >
                  Saludar
                  </button>
+                 <Boton/>
             </div>
         );
     }
