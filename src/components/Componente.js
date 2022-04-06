@@ -1,7 +1,5 @@
-import React, {Component} from "react";
+import React,{Component} from "react";
 
-function Componente(props){
-return <h2>{props.msg}</h2>;
-}
+const Componente = (props) => <h2>{props.msg}</h2>;
 
 export default Componente;
