@@ -38,25 +38,21 @@ this.restar = this.restar.bind(this);
     }
 }
 
+//properies Initializer
 export class EventosES7 extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
+    state = {
             contador: 0,
         };
 
-this.sumar = this.sumar.bind(this);
-this.restar = this.restar.bind(this);
-} 
-
-    sumar(e){
+//Arrow function
+sumar = (e) => {
         console.log(this);
         this.setState({
             contador: this.state.contador+1,
         });
-    }
+    };
 
-    restar(e){
+restar = (e) => {
         console.log(this);
         this.setState({
             contador: this.state.contador-1,
