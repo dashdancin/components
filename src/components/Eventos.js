@@ -12,6 +12,10 @@ export default class Eventos extends Component {
             <div>
                 <h2>Eventos en Componentes de Clase</h2>
                 <h3>{this.state-contador}</h3>
+                <nav>
+                    <button>+</button>
+                    <button>-</button>
+                </nav>
             </div>
         );
     }
