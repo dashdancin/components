@@ -15,7 +15,7 @@ export default class Padre extends Component {
         return(
             <>
                 <h2>Comunicación entre Componentes</h2>
-                <Hijo mensaje= "Mensaje para el hijo 1"/>
+                <Hijo incrementarContador={this.incrementarContador} mensaje= "Mensaje para el hijo 1"/>
                 <Hijo incrementarContador={this.incrementarContador} mensaje= "Mensaje para el hijo 2"/>
             </>
         );
