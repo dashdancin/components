@@ -6,14 +6,23 @@ export default class Eventos extends Component {
         this.state = {
             contador: 0,
         };
-        } 
 
-    sumar(){
-        console.log("sumando");
+this.sumar = this.sumar.bind(this);
+this.restar = this.restar.bind(this);
+} 
+
+    sumar(e){
+        console.log(this);
+        this.setState({
+            contador: this.state.contador+1,
+        });
     }
 
-    restar(){
-        console.log("restando");
+    restar(e){
+        console.log(this);
+        this.setState({
+            contador: this.state.contador-1,
+        });
     }
 
     render(){
@@ -21,8 +30,8 @@ export default class Eventos extends Component {
             <div>
                 <h2>Eventos en Componentes de Clase</h2>
                 <nav>
-                    <button onClick={this.sumar}>-</button>
-                    <button onClick={this.restar}>+</button>
+                    <button onClick={this.sumar}>+</button>
+                    <button onClick={this.restar}>-</button>
                     <h3>{this.state.contador}</h3>
                 </nav>
             </div>
