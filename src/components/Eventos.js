@@ -73,9 +73,13 @@ restar = (e) => {
     }
 }
 
-function Boton(props) {
-    return(<button onClick={props.myOnClick}>Boton hecho componente</button>)
-    }
+// function Boton(props) {
+//     return(<button onClick={props.myOnClick}>Boton hecho componente</button>)
+//     }
+
+const Boton = ({myOnClick}) => ( 
+    <button onClick={myOnClick}>Boton hecho componente</button>
+)
     
 export class MasSobreEventos extends Component {
     handleClick = (e, mensaje) => {
