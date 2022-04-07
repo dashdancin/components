@@ -5,7 +5,12 @@ export default class Padre extends Component {
         return(
             <>
                 <h2>Comunicación entre Componentes</h2>
+                <Hijo mensaje= "Mensaje para el hijo 1"/>
             </>
-        )
+        );
     }
+}
+
+function Hijo(props){
+    return <h2>{props.mensaje}</h2>
 }
