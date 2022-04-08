@@ -1,5 +1,14 @@
 import React, {Component} from 'react';
 
+class Reloj extends Component {
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return <h3>props.hora</h3>
+    }
+}
 export default class CicloVida extends Component {
     constructor(props){
         super(props);
@@ -46,7 +55,7 @@ export default class CicloVida extends Component {
         return(
         <>
             <h2>Ciclo de Vida de los Componentes de Clase </h2>
-            <h3>{this.state.hora}</h3>
+            < Reloj hora={this.state.hora}/>
             <button onClick={this.iniciar}>iniciar</button>
             <button onClick={this.detener}>detener</button>
         </>
