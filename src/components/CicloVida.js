@@ -8,32 +8,37 @@ export default class CicloVida extends Component {
         this.state = {
             hora:new Date().toLocaleTimeString()
         };
-
-        this.temporizador = null;
-            this.temporizador = setInterval(() => {
-                this.setState({
-                    hora: new Date().toLocaleDateString()
-                })
-            }, 1000);
             }
+
+    tictac = () => {
+        this.temporizador = null;
+        this.temporizador = setInterval(() => {
+            this.setState({
+                hora: new Date().toLocaleDateString()
+            })
+        }, 1000);
     }
 
-    tictac = () => {}
+    iniciar = () => {
+        this.titac();
+    };
 
-    iniciar = () => {};
+    detener = () => {
+        clearInterval(this.temporizador);
+    };
 
-    detener = () => {};
-
-    render(){
-        console.log(4, 
-            "El componente se redibuja por algún cambio en el DOM")
+    render() {
+        console.log(
+            4, 
+            "El componente se redibuja por algún cambio en el DOM"
+            );
         return(
         <>
             <h2>Ciclo de Vida de los Componentes de Clase </h2>
             <h3>{this.state.hora}</h3>
-            <button onClick={}>iniciar</button>
-            <button onClick={}>detener</button>
+            <button onClick={this.iniciar}>iniciar</button>
+            <button onClick={this.detener}>detener</button>
         </>
-        )
+        );
     }
 }
