@@ -6,21 +6,22 @@ export default class CicloVida extends Component {
         console.log(0, "El componente se inicializa, aún NO está en el DOM")
     
         this.state = {
-            hora:new Date().toLocaleTimeString()
+            hora:new Date().toLocaleTimeString(),
         };
+
+        this.temporizador = null;
             }
 
     tictac = () => {
-        this.temporizador = null;
         this.temporizador = setInterval(() => {
             this.setState({
-                hora: new Date().toLocaleDateString()
-            })
+                hora: new Date().toLocaleTimeString(),
+            });
         }, 1000);
-    }
+    };
 
     iniciar = () => {
-        this.titac();
+        this.tictac();
     };
 
     detener = () => {
