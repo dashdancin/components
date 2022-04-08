@@ -12,6 +12,10 @@ export default class CicloVida extends Component {
         this.temporizador = null;
             }
 
+    componentDidMount(){
+        console.log(1, "El componente ya se encuentra en el DOM")
+    }
+
     tictac = () => {
         this.temporizador = setInterval(() => {
             this.setState({
