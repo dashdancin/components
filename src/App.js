@@ -9,6 +9,7 @@ import ComunicacionComponentes from './components/ComunicacionComponentes';
 import CicloVida from './components/CicloVida';
 import AjaxApis from './components/AjaxApis';
 import './App.css';
+import ContadorHooks from './components/ContadorHooks';
 
 function App() {
   return (
@@ -58,6 +59,8 @@ function App() {
         <CicloVida/>
         <hr/>
         <AjaxApis/>
+        <hr/>
+        <ContadorHooks/>
       </section>
       </header>
     </div>
