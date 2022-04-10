@@ -29,6 +29,7 @@ function App() {
         </a>          
         </section>
       <section>
+        <AjaxApis/>
         <Componente msg="Hola soy un componente funcional desde una prop" />
         <Propiedades
         cadena="Esto no es una cadena de texto"
@@ -57,7 +58,6 @@ function App() {
         <hr/>
         <CicloVida/>
         <hr/>
-        <AjaxApis/>
       </section>
       </header>
     </div>

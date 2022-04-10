@@ -26,7 +26,7 @@ export default class AjaxApis extends Component {
                 .then((json) => {
                     console.log(json);
                     let pokemon = {
-                        id: json.id,
+                        id: json.id + "a",
                         name: json.name,
                         avatar: json.sprites.front_default,
                     };
