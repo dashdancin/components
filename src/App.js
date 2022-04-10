@@ -60,7 +60,7 @@ function App() {
         <hr/>
         <AjaxApis/>
         <hr/>
-        <ContadorHooks/>
+        <ContadorHooks titulo="seguidores"/>
       </section>
       </header>
     </div>
