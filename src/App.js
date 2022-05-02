@@ -20,7 +20,15 @@ function App() {
         </a>
       </header>
       <section>
-        <Componente/>
+        <Componente msg="Hola soy un componente Funcional desde una prop" />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </section>
     </div>
   );
