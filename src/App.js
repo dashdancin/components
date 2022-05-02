@@ -17,6 +17,7 @@ import Referencias from './components/Referencias';
 import Formularios from './components/Formularios';
 import './App.css';
 import Estilos from './components/Estilos';
+import ComponentesEstilizados from './components/ComponentesEstilizados';
 
 function App() {
   return (
@@ -83,6 +84,8 @@ function App() {
         <hr/>
         <Estilos/>
       </section>
+        <hr/>
+        <ComponentesEstilizados/>
       </header>
     </div>
   );
