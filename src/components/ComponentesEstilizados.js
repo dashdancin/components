@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { css,
+import styled, { 
+    css,
     keyframes,
     ThemeProvider,
     createGlobalStyle,
@@ -9,11 +10,11 @@ export default function ComponentesEstilizados() {
     let mainColor = '#db7093',
         mainAlphaColor80 = '#db709380';
 
-    const setTransformationTime = (time) => `all ${time} ease-in-out`;
+    const setTransitionTime = (time) => `all ${time} ease-in-out`;
 
     const fadeIn = keyframes`
         0% {
-            opacity: 0%
+            opacity: 0;
         }
         
         100% {
@@ -27,8 +28,9 @@ export default function ComponentesEstilizados() {
             color: ${(props) => props.color};
             color: ${({ color }) => color};
             color: ${({ color }) => color || '#000'};
-            background-color: ${setTransformationTime('is')};
-            animations: ${fadeIn} 5S ease-out};
+            background-color: ${mainColor};
+            transition: ${setTransitionTime('1s')};
+            animation: ${fadeIn} 5s ease-out;
 
         ${({ isButton }) => 
         isButton &&
@@ -39,10 +41,10 @@ export default function ComponentesEstilizados() {
         cursor: pointer;
     `}
 
-        &:hover {
+    &:hover {
             background-color: ${mainAlphaColor80};
         }
-            `;
+    `;
         
             const light = {
                 color: "#222",
@@ -76,12 +78,13 @@ export default function ComponentesEstilizados() {
 
         return (
             <>
+                <GlobalStyle/>
                 <h2>Styled Components</h2>
                 <MyH3>Hola Soy un h3 estilizado con styled-components</MyH3>
                 <MyH3 color='#61dagb'>
                     Hola Soy un h3 estilizado con styled-components
                 </MyH3>
-                <MyH3>
+                <MyH3 isButton>Soy un h3 estilizado con boton</MyH3>
                 <ThemeProvider theme={light}>
                     <Box>Soy una caja dark</Box>
                     <BoxRounded>Soy una caja redondeada dark</BoxRounded>
@@ -89,8 +92,7 @@ export default function ComponentesEstilizados() {
                 <ThemeProvider theme={dark}>
                     <Box>Soy una caja dark</Box>
                     <BoxRounded>Soy una caja redondeada dark</BoxRounded>
-                </ThemeProvider>
-                </MyH3>
+                </ThemeProvider> 
             </>
-        )
+        );
 }
