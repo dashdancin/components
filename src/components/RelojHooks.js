@@ -29,8 +29,8 @@ export default function RelojHooks() {
         <>
           <h2>Reloj con Hooks</h2>
           {visible && <Reloj hora={hora}/>}
-          <button onClick={()=> setVisible(true)}>iniciar temporiador</button>
-          <button onClick={()=> setVisible(false)}>detener temporizador</button>
+          <button onClick={()=> setVisible(true)}>iniciar</button>
+          <button onClick={()=> setVisible(false)}>detener</button>
         </>
     );
 }
