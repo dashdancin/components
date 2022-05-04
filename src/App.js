@@ -52,6 +52,7 @@ function App() {
         <EventosES6/>
         <hr/>
         <EventosES7/>
+        <ScrollHooks/>
         <hr/>
         <MasSobreEventos/>
         <hr/>
@@ -63,7 +64,7 @@ function App() {
         <hr/>
         <ContadorHooks titulo="seguidores"/>
         <hr/>
-        <ScrollHooks/>
+        
       </section>
       </header>
     </div>
