@@ -28,7 +28,9 @@ useEffect(()=> {
         };
 
         setPokemons((pokemons) => [...pokemons, pokemon]);
-        }
+        });
     };
+
+    getPokemons("https://pokeapi.co/api/v2/pokemon/")
 });
 }
