@@ -26,7 +26,8 @@ useEffect(()=> {
             name: json.name,
             avatar: json.sprites.front_default,
         };
-        
+
+        setPokemons((pokemons) => [...pokemons, pokemon]);
         }
     };
 });
