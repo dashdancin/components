@@ -34,5 +34,9 @@ useEffect(()=> {
     getPokemons("https://pokeapi.co/api/v2/pokemon/")
 }, []);
 
-
+    return (
+        <>
+            <h2>Peticiones Asincronas en Hooks</h2>
+        </>
+    )
 }
