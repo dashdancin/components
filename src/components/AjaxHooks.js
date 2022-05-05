@@ -37,6 +37,10 @@ useEffect(()=> {
     return (
         <>
             <h2>Peticiones Asincronas en Hooks</h2>
+            {pokemons.length === 0 ? (
+                <h3>Cargando...</h3>
+            )
+            )}
         </>
     )
 }
