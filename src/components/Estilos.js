@@ -1,5 +1,6 @@
 import React from 'react';
 import './Estilos.css';
+import './Estilos.scss'
 import moduleStyles from './Estilos.module.css'
 
 export default function Estilos () {
@@ -28,6 +29,7 @@ export default function Estilos () {
             </h3>
             <h3 className={moduleStyles.error}>Estilos con Módulos</h3>
             <h3 className={moduleStyles.success}>Estilos con Módulos</h3>
+            <h3 className='bg-sass'>Estilos con SASS</h3>
         </section>
     )
 }
