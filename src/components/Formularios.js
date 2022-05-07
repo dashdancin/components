@@ -17,10 +17,12 @@ export default function Formularios() {
             <form onSubmit={handleSubmit}>
                 <label htmlFor='nombre'>Nombre</label>
                 <input
-                    type="text"
+                    type='text'
                     id='nombre'
                     name='nombre'
                     value={nombre}
+                    onChange={(e) => setNombre(e.target.value)}
+                />
             </form>
         </>
     )
