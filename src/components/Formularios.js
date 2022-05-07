@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 export default function Formularios() {
-    const [nombre, setNombre] =useState ("");
-    const [sabor, setSabor] = useState ("");
+    const [nombre, setNombre] = useState ('');
+    const [sabor, setSabor] = useState ('');
     // const [lenguaje, SetLenguaje] = useState ("");
     // const [terminos, setTerminos] = useState (false);
 
@@ -26,18 +26,18 @@ export default function Formularios() {
             <p>Elige tu sabor JS Favorito:</p>
                 <input
                     type='radio'
-                    id='vainilla'
-                    name='sabor'
-                    value='vainilla'
+                    id='vanilla'
+                    name="sabor"
+                    value="vanilla"
                     onChange={(e) => setSabor(e.target.value)}
                     defaultChecked
                 />
-                <label htmlFor='vainilla'>Vainilla</label>
+                <label htmlFor="vanilla">Vanilla</label>
                 <input
-                    type='radio'
-                    id='react'
-                    name='sabor'
-                    value='react'
+                    type="radio"
+                    id="react"
+                    name="sabor"
+                    value="react"
                     onChange={(e) => setSabor(e.target.value)}
                 />
                 <label htmlFor='react'>React</label>
@@ -60,12 +60,12 @@ export default function Formularios() {
                 <input
                     type='radio'
                     id='svelte'
-                    name='sabor'
+                    name="sabor"
                     value='svelte'
                     onChange={(e) => setSabor(e.target.value)}
                 />
                 <label htmlFor='svelte'>Svelte</label>
             </form>
         </>
-    )
+    );
 }
