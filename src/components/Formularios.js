@@ -16,6 +16,11 @@ export default function Formularios() {
             <h2>Formularios</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='nombre'>Nombre</label>
+                <input
+                    type="text"
+                    id='nombre'
+                    name='nombre'
+                    value={nombre}
             </form>
         </>
     )
