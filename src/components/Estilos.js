@@ -5,7 +5,7 @@ export default function Estilos () {
     let myStyles = {
         borderRadius: '.5rem',
         margin: '2rem auto',
-        maxWidth: '50%'
+        maxWidth: '70%'
     };
 
     return (
@@ -13,7 +13,7 @@ export default function Estilos () {
             <h2>Estilos CSS en React</h2>
             <h3 className='bg-react'>Estilos en hoja CSS externa</h3>
             <h3 className='bg-react'
-            style={{borderRadius: '.25rem', margin: '1rem', background: '#423afb'}}
+            style={{borderRadius: '.25rem', margin: '1rem', background: '#5252fb'}}
             >
                 Estilos en línea (atributo style)
             </h3>
