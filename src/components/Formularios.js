@@ -23,6 +23,13 @@ export default function Formularios() {
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                 />
+            <p>Elige tu sabor JS Favorito:</p>
+            <input
+                type={'radio'}
+                id='vainilla'
+                name='sabor'
+                value='vainilla'
+                onChange={(e) => setSabor(e.target.value)}
             </form>
         </>
     )
