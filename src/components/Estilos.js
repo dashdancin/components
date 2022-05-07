@@ -20,6 +20,11 @@ export default function Estilos () {
             <h3 className='bg-react' style={myStyles}>
                 Estilos en línea
             </h3>
+            <h3 className='bg-react'>
+                Agregando Normalize con
+                <br />
+                <code>@import-normalize;</code>
+            </h3>
         </section>
     )
 }
